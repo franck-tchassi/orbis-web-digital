@@ -20,6 +20,7 @@ const formSchema = z.object({
   projectDetails: z.string().min(8, 'Décrivez votre projet en détail (20 caractères minimum)'),
 });
 
+
 export default function ContactPage() {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -69,7 +70,7 @@ export default function ContactPage() {
   if (isSubmitted) {
     return (
       <div className="max-w-2xl mx-auto px-4 py-24 text-center">
-        <div className="bg-green-50 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-8">
+        <div className="bg-green-50 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-8" aria-hidden="true">
           <CheckCircle className="text-green-600 h-12 w-12" />
         </div>
         <h2 className="text-3xl font-bold tracking-tight mb-4">Merci pour votre demande !</h2>
@@ -78,15 +79,15 @@ export default function ContactPage() {
   }
 
   return (  
-    <div className="max-w-6xl mx-auto px-4 py-32 "> {/* Augmentation du padding vertical */}
+    <main className="max-w-6xl mx-auto px-4 py-32 "> {/* Augmentation du padding vertical */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Colonne gauche - Processus */}
-        <div className="space-y-12"> {/* Plus d'espace entre les éléments */}
-          <div className="space-y-4">
+        <article className="space-y-12"> {/* Plus d'espace entre les éléments */}
+          <header className="space-y-4">
             <h1 className="text-3xl font-bold tracking-tight">Discutons de votre projet</h1>
-          </div>
+          </header>
 
-          <div className="space-y-8">
+          <section className="space-y-8">
             <div className="flex gap-4">
               <div className="bg-blue-50 p-3 rounded-full h-fit">
                 <Mail className="text-blue-600 h-5 w-5" />
@@ -134,8 +135,8 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+        </article>
 
         {/* Colonne droite - Formulaire */}
         <Card className="border-none shadow-lg">
@@ -195,7 +196,7 @@ export default function ContactPage() {
                   placeholder="Décrivez votre projet ici"
                 />
                 {errors.projectDetails && (
-                  <p className="text-sm text-red-500">{errors.projectDetails.message?.toString()}</p>
+                  <p className="text-sm text-red-500" role="alert">{errors.projectDetails.message?.toString()}</p>
                 )}
               </div>
 
@@ -224,6 +225,6 @@ export default function ContactPage() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }
