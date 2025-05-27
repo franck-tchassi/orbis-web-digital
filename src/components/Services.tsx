@@ -28,7 +28,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className=' xl:w-4/5 mx-auto px-6 md:px-20 py-16' id='services'>
+    <section className='xl:w-4/5 mx-auto px-6 md:px-20 py-12 md:py-20' id='services'>
         <h2>
             <FlipTextDemo />
         </h2>
@@ -60,7 +60,7 @@ const Services = () => {
               </div>
             ))}
         </div>
-        <div className='py-20'>
+        <div className='mt-6'>
             <ScrollBasedVelocityDemo />
         </div>
     </section>

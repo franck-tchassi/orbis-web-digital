@@ -11,10 +11,10 @@ const checkItemVariants = {
 
 const MeetingPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <div className='md:px-0 px-6 xl:w-4/5 2xl:w-[68%] mx-auto justify-between md:flex'>
-        <div className='md:w-2/5 mt-24'> {/* Marge supérieure réduite */}
+      <div className="flex-grow flex flex-col md:flex-row px-6 md:px-0 xl:w-4/5 2xl:w-[68%] mx-auto mt-16 md:mt-24">
+        <div className='md:w-2/5 pt-8 md:pt-12'> {/* Marge supérieure réduite */}
           {/* Titre principal réduit */}
           <h2 className='text-3xl md:text-4xl font-semibold pt-8 text-gray-900 dark:text-white'>
             Rencontrons-nous
@@ -39,6 +39,7 @@ const MeetingPage = () => {
               description: "Assistance pour votre site ou application.",
             },
           ].map((item, index) => (
+            
             <motion.div
               key={index}
               variants={checkItemVariants}

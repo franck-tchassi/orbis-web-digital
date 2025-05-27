@@ -10,11 +10,11 @@ const Footer = () => {
           
             <Link href="/" passHref className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded-sm">
               <Image
-                src="/logo/orbisLogo.png" 
+                src="/logo/orbis-logo.png" 
                 alt="Orbis Web Digital - Retour à l'accueil" 
                 width={132} 
                 height={55} 
-                className="p-1 flex items-center"
+                className="p-4 flex items-center"
                 priority
               />
             </Link>

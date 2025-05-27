@@ -47,11 +47,11 @@ const Header = () => {
             <div className="relative">
               
                 <Image
-                  src="/logo/orbisLogo.png" 
+                  src="/logo/orbis-logo.png" 
                   alt="Orbis Web Digital" 
                   width={132} 
                   height={55} 
-                  className='p-1 flex items-center'
+                  className='p-4 flex items-center'
                   priority
                 />
             

@@ -28,17 +28,17 @@ const Hero = () => {
         }
       ]
   return (
-    <div className='md:pb-10  mt-36 px-6 md:px-20 '>
+    <section className='py-12 md:py-20 px-6 md:px-20 mt-16 md:mt-24'>
       <h1>
         <CoverDemo />
       </h1>
       
-      <p className='md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600 dark:text-gray-300'>
+      <p className='md:text-center text-xl md:text-2xl my-8 md:my-12 md:w-4/5 mx-auto text-gray-600 dark:text-gray-300'>
         Transformez votre présence digitale avec des solutions sur-mesure.<br className="hidden md:block" />
         Obtenez un devis personnalisé en moins de 24h après notre échange.
       </p>
       
-      <div className="flex flex-col sm:flex-row md:justify-center items-center gap-4">
+      <div className="flex flex-col sm:flex-row md:justify-center items-center gap-4 mt-8 md:mt-12">
         <Link
           href="/meeting"
           aria-label="Planifier un audit gratuit de votre projet"
@@ -66,7 +66,7 @@ const Hero = () => {
             </BoxReveal>
           ))}
         </div>
-    </div>
+    </section>
   )
 }
 

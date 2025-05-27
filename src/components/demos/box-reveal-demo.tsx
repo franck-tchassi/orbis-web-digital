@@ -8,27 +8,27 @@ const BoxRevealDemo = () => {
   const steps = [
     {
       title: "1. Échange Initial",
-      icon: <MessageSquare className="text-blue-500 w-6 h-6" />,
+      icon: <MessageSquare className="text-blue-500 w-5 h-5" />,
       description: "Discutons de vos besoins lors d'un appel découverte",
       action: "Planifier un appel",
       link: "/meeting"
     },
     {
       title: "2. Collaboration",
-      icon: <Users className="text-blue-500 w-6 h-6" />,
+      icon: <Users className="text-blue-500 w-5 h-5" />,
       description: "Définissons ensemble les spécifications du projet",
      
       link: "#"
     },
     {
       title: "3. Réalisation",
-      icon: <Code className="text-blue-500 w-6 h-6" />,
+      icon: <Code className="text-blue-500 w-5 h-5" />,
       description: "Notre équipe développe votre solution sur mesure",
       link: "#"
     },
     {
       title: "4. Livraison",
-      icon: <CheckCircle className="text-blue-500 w-6 h-6" />,
+      icon: <CheckCircle className="text-blue-500 w-5 h-5" />,
       description: "Validation et mise en production de votre projet",
       link: "#"
     }
@@ -44,10 +44,10 @@ const BoxRevealDemo = () => {
                 {step.icon}
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-white">
+                <h3 className="text-xl  font-semibold text-gray-800 dark:text-white">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mt-1 mb-2">
+                <p className="text-gray-600 text-base dark:text-gray-300 mt-1 mb-2">
                   {step.description}
                 </p>
                 <Link 

@@ -4,7 +4,7 @@ import { InfiniteMovingLogos } from './ui/infinite-moving-logo'
 
 const GlobalPartners = () => {
   return (
-    <section className="w-full overflow-hidden px-6 md:px-20 py-16"> {/* Modification ici */}
+    <section className="w-full overflow-hidden px-6 md:px-20 py-12 md:py-20"> {/* Modification ici */}
      <div className='max-w-7xl mx-auto'>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -15,7 +15,7 @@ const GlobalPartners = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
         <div className="flex justify-center gap-8">
           <div className="text-center">
             <span className="text-blue-600 text-4xl md:text-5xl font-bold block">
@@ -50,7 +50,7 @@ const GlobalPartners = () => {
       </div>
 
       <div className=" mt-12 w-full overflow-hidden">
-        <h3 className="text-center text-xl font-medium text-gray-600 mb-8">
+        <h3 className="text-center text-xl font-medium text-gray-600">
           Ils nous font confiance
         </h3>
         <InfiniteMovingLogos
